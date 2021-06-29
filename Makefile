@@ -4,7 +4,7 @@ TAILWIND_DIR = tailwind
 
 init: # Init tailwind stuff (run once on project init)
 	cd $(TAILWIND_DIR) && \
-		rm -rf node_modules package*.json && \
+		rm -rf node_modules package-lock.json && \
 		npm install tailwindcss postcss-cli autoprefixer && \
 		npx tailwind init
 
